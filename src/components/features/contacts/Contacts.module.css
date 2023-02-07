@@ -71,3 +71,8 @@
 .filterInput:focus {
   border-bottom: 2px solid yellow;
 }
+
+.loader {
+  left: 50%;
+  top: 50%;
+}

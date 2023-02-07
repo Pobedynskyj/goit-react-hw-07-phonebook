@@ -6,17 +6,17 @@ import s from './Contacts.module.css';
 export const ContactsFilter = () => {
   const filter = useSelector(state => state.filter);
   const dispatch = useDispatch();
-
-  const onFilterChanged = filter => {
-    dispatch(filterContact(filter));
+  const onFilterChanged = e => {
+    dispatch(filterContact(e.target.value));
   };
 
   return (
     <>
       <input
+        type="text"
         className={s.filterInput}
         placeholder="Search contact"
-        onChange={e => onFilterChanged(e.target.value)}
+        onChange={onFilterChanged}
         value={filter}
       />
     </>
