@@ -12,7 +12,7 @@ export const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllContacts());
-  }, []);
+  }, [dispatch]);
   return (
     <div className={s.container}>
       <h1 className={s.ttle}>Contacts book</h1>
