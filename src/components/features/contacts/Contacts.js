@@ -1,4 +1,3 @@
-import { useSelector } from 'react-redux';
 import { ContactsFilter } from './ContactsFilter';
 import { ContactsList } from './ContactsList';
 import { CreateContacts } from './CreateContacts';
